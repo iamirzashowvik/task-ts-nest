@@ -1,9 +1,9 @@
-import validator from 'class-validator';
+import { IsNotEmpty } from 'class-validator';
 
 export class CreateTaskDto {
-  @validator.IsNotEmpty()
+  @IsNotEmpty()
   title: string;
 
-  @validator.IsNotEmpty()
+  @IsNotEmpty()
   description: string;
 }

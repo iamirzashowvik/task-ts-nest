@@ -1,29 +1,64 @@
+@authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnpheCIsImlhdCI6MTY1MjU0NDQxMCwiZXhwIjoxNjUyNTQ4MDEwfQ.x7rCOlbscObUD06IfMhqfHtYDWnWnyDnMy9rXQVSfrc
+
 ###
 GET http://localhost:3000/tasks/
+Authorization: {{authorization}}
+
 
 ###
 POST http://localhost:3000/tasks/
 content-type: application/json
+Authorization: {{authorization}}
 
 {
-  "title": "Love  9",
-  "description": "Learn nest"
+  "title": "Task no 3",
+  "description": "this is description 3"
 }
 
 ###
-DELETE  http://localhost:3000/tasks/0.0749342040938572
-###
-GET http://localhost:3000/tasks/0.25110023252623903
+DELETE  http://localhost:3000/tasks/2
+Authorization: {{authorization}}
 
+###GET TASK BY ID
+GET http://localhost:3000/tasks/2
+Authorization: {{authorization}}
 
 ###
-PATCH http://localhost:3000/tasks/0.9372106515481038/status
+PATCH http://localhost:3000/tasks/5/status
 content-type: application/json
+Authorization: {{authorization}}
 
 {
   "status": "DONE"
 }
 
 ###
-GET http://localhost:3000/tasks?status=DONE&search=Love  9
+GET http://localhost:3000/tasks?status=OPEN&search=this
+Authorization: {{authorization}}
+
+###
+POST http://localhost:3000/auth/signup/
+content-type: application/json
+
+
+{
+  "username":"mirzax2",
+  "password":"12345$ABCx"
+}
+
+###
+POST http://localhost:3000/auth/signin/
+content-type: application/json
+
+ 
+{
+  "username":"mirzax",
+  "password":"12345$ABCx"
+}
+
+
+###
+POST http://localhost:3000/auth/test/
+Content-Type: application/json
+Authorization: {{authorization}}
 
