@@ -1,7 +1,9 @@
 @authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnpheCIsImlhdCI6MTY1MjU0NDQxMCwiZXhwIjoxNjUyNTQ4MDEwfQ.x7rCOlbscObUD06IfMhqfHtYDWnWnyDnMy9rXQVSfrc
-@base_url =http://localhost:3000
 
-###https://git.heroku.com/nesttaskappmirzaop.git
+@local=http://localhost:3000
+
+@remote=https://git.heroku.com/nesttaskappmirzaop.git
+@base_url =https://git.heroku.com/nesttaskappmirzaop.git
 ###
 GET {{base_url}}/tasks/
 Authorization: {{authorization}}
