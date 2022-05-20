@@ -2,8 +2,8 @@
 
 @local=http://localhost:3000
 
-@remote=https://git.heroku.com/nesttaskappmirzaop.git
-@base_url =https://nesttaskappmirzaop.herokuapp.com
+@remote=https://nesttaskappmirzaop.herokuapp.com
+@base_url ={{remote}}
 ###
 GET {{base_url}}/tasks/
 Authorization: {{authorization}}
@@ -66,3 +66,5 @@ POST {{base_url}}/auth/test/
 Content-Type: application/json
 Authorization: {{authorization}}
 
+###
+GET {{base_url}}/

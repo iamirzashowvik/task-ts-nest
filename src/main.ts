@@ -10,6 +10,8 @@ async function bootstrap() {
   const serverConfig = config.get('server');
 
   const port = serverConfig.port;
+
+  console.log('Nest server listening on port  ', port, this.address().port);
   await app.listen(port);
 }
 bootstrap();
