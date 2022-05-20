@@ -11,7 +11,7 @@ async function bootstrap() {
 
   const port = serverConfig.port;
 
-  console.log('Nest server listening on port  ', port, this.address().port);
+  console.log('Nest server listening on port  ', port);
   await app.listen(port);
 }
 bootstrap();
