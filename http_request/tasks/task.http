@@ -1,12 +1,14 @@
 @authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnpheCIsImlhdCI6MTY1MjU0NDQxMCwiZXhwIjoxNjUyNTQ4MDEwfQ.x7rCOlbscObUD06IfMhqfHtYDWnWnyDnMy9rXQVSfrc
+@base_url =http://localhost:3000
 
+###https://git.heroku.com/nesttaskappmirzaop.git
 ###
-GET http://localhost:3000/tasks/
+GET {{base_url}}/tasks/
 Authorization: {{authorization}}
 
 
 ###
-POST http://localhost:3000/tasks/
+POST {{base_url}}/tasks/
 content-type: application/json
 Authorization: {{authorization}}
 
@@ -16,15 +18,15 @@ Authorization: {{authorization}}
 }
 
 ###
-DELETE  http://localhost:3000/tasks/2
+DELETE  {{base_url}}/tasks/2
 Authorization: {{authorization}}
 
 ###GET TASK BY ID
-GET http://localhost:3000/tasks/2
+GET {{base_url}}/tasks/2
 Authorization: {{authorization}}
 
 ###
-PATCH http://localhost:3000/tasks/5/status
+PATCH {{base_url}}/tasks/5/status
 content-type: application/json
 Authorization: {{authorization}}
 
@@ -33,11 +35,11 @@ Authorization: {{authorization}}
 }
 
 ###
-GET http://localhost:3000/tasks?status=OPEN&search=this
+GET {{base_url}}/tasks?status=OPEN&search=this
 Authorization: {{authorization}}
 
 ###
-POST http://localhost:3000/auth/signup/
+POST {{base_url}}/auth/signup/
 content-type: application/json
 
 
@@ -47,18 +49,18 @@ content-type: application/json
 }
 
 ###
-POST http://localhost:3000/auth/signin/
+POST {{base_url}}/auth/signin/
 content-type: application/json
 
  
 {
-  "username":"mirzax",
+  "username":"mirzax2",
   "password":"12345$ABCx"
 }
 
 
 ###
-POST http://localhost:3000/auth/test/
+POST {{base_url}}/auth/test/
 Content-Type: application/json
 Authorization: {{authorization}}
 

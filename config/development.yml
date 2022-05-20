@@ -1,8 +1,9 @@
 db:
-  host: 'localhost'
-  username: 'postgres'
-  password: '123456'
   synchronize: true
+  host: 'tiny.db.elephantsql.com'
+  password: 'vI4R1S0phmpn00yBSCDs3a4bs2tss3Tv'
+  username: 'uzjfuraj'
+  database: 'uzjfuraj'
 
 jwt:
   secret: 'secretKey'
