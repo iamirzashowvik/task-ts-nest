@@ -3,7 +3,7 @@
 @local=http://localhost:3000
 
 @remote=https://git.heroku.com/nesttaskappmirzaop.git
-@base_url =https://git.heroku.com/nesttaskappmirzaop.git
+@base_url =https://nesttaskappmirzaop.herokuapp.com
 ###
 GET {{base_url}}/tasks/
 Authorization: {{authorization}}
