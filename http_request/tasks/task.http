@@ -1,4 +1,4 @@
-@authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnpheCIsImlhdCI6MTY1MjU0NDQxMCwiZXhwIjoxNjUyNTQ4MDEwfQ.x7rCOlbscObUD06IfMhqfHtYDWnWnyDnMy9rXQVSfrc
+@authorization= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnpheDIiLCJpYXQiOjE2NTMxOTcwMzksImV4cCI6MTY1MzIwMDYzOX0.T6awZLr6IIK4_NBvFisvWziE5tJNl0uA0jYVi8JXuyg
 
 @local=http://localhost:3000
 
@@ -15,7 +15,7 @@ content-type: application/json
 Authorization: {{authorization}}
 
 {
-  "title": "Task no 3",
+  "title": "Task no 3er",
   "description": "this is description 3"
 }
 
@@ -46,7 +46,7 @@ content-type: application/json
 
 
 {
-  "username":"mirzax2",
+  "username":"mirzax244",
   "password":"12345$ABCx"
 }
 
